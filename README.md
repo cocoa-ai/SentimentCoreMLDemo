@@ -3,12 +3,12 @@
 A Demo application using `CoreML` framework for sentiment polarity analysis.
 
 <div align="center">
-<img src="https://github.com/cocoa-ai/SentimentPolarityCoreML/blob/master/Screenshot.png" alt="SentimentPolarityCoreML" width="300" height="533" />
+<img src="https://github.com/cocoa-ai/SentimentCoreMLDemo/blob/master/Screenshot.png" alt="SentimentCoreMLDemo" width="300" height="533" />
 </div>
 
 ## Model
 
-[CoreML model](https://github.com/cocoa-ai/SentimentPolarityCoreML/blob/master/SentimentPolarity/Resources/SentimentPolarity.mlmodel)
+[CoreML model](https://github.com/cocoa-ai/SentimentCoreMLDemo/blob/master/SentimentPolarity/Resources/SentimentPolarity.mlmodel)
 was converted from [Scikit-learn Pipeline](http://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html)
 using [coremltools](https://pypi.python.org/pypi/coremltools) python package.
 
@@ -19,7 +19,7 @@ products and services. Accuracy can be improved by using
 [TfidfVectorizer](http://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html) for feature extraction, but it's not supported by [coremltools](https://pypi.python.org/pypi/coremltools)
 at the moment.
 
-You can find training and conversion source code [here](https://github.com/cocoa-ai/SentimentPolarityCoreML/blob/master/Convert/sentiment.py).
+You can find training and conversion source code [here](https://github.com/cocoa-ai/SentimentCoreMLDemo/blob/master/Convert/sentiment.py).
 
 ## Requirements
 
@@ -29,8 +29,8 @@ You can find training and conversion source code [here](https://github.com/cocoa
 ## Installation
 
 ```sh
-git clone https://github.com/cocoa-ai/SentimentPolarityCoreML.git
-cd SentimentPolarityCoreML
+git clone https://github.com/cocoa-ai/SentimentCoreMLDemo.git
+cd SentimentCoreMLDemo
 open SentimentPolarity.xcodeproj/
 ```
 
