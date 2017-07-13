@@ -13,7 +13,7 @@ was converted from [Scikit-learn Pipeline](http://scikit-learn.org/stable/module
 using [coremltools](https://pypi.python.org/pypi/coremltools) python package.
 
 The model is based on [LinearSVC](http://scikit-learn.org/stable/modules/generated/sklearn.svm.LinearSVC.html) classifier and is able to distinguish between
-positive and negative sentences with best CV score = 0.801013024602. It was
+positive and negative sentences with **best CV score = 0.801013024602**. It was
 trained using [Epinions.com](http://epinions.com) dataset with reviews of
 products and services. Accuracy can be improved by using
 [TfidfVectorizer](http://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html) for feature extraction, but it's not supported by [coremltools](https://pypi.python.org/pypi/coremltools)
