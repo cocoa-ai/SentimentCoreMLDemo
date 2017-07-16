@@ -19,8 +19,6 @@ products and services. Accuracy can be improved by using
 [TfidfVectorizer](http://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html) for feature extraction, but it's not supported by [coremltools](https://pypi.python.org/pypi/coremltools)
 at the moment.
 
-You can find training and conversion source code [here](https://github.com/cocoa-ai/SentimentCoreMLDemo/blob/master/Convert/sentiment.py).
-
 ## Requirements
 
 - Xcode 9
@@ -35,6 +33,13 @@ open SentimentPolarity.xcodeproj/
 ```
 
 Build the project and run it on a simulator or a device with iOS 11.
+
+## Conversion
+
+```sh
+cd Convert
+python sentiment.py
+```
 
 ## Author
 
