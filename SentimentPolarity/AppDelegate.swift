@@ -9,7 +9,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
   // MARK: - Application lifecycle
 
   func application(_ application: UIApplication,
-                   didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+                   didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     window = UIWindow()
     window?.rootViewController = navigationController
     window?.makeKeyAndVisible()
