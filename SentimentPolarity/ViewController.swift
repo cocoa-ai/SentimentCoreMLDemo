@@ -32,7 +32,7 @@ final class ViewController: UIViewController {
     NotificationCenter.default.addObserver(
       self,
       selector: #selector(keyboardDidShow(notification:)),
-      name: .UIKeyboardDidShow,
+      name: UIResponder.keyboardDidShowNotification,
       object: nil
     )
 
@@ -55,7 +55,7 @@ final class ViewController: UIViewController {
   // MARK: - Actions
 
   @objc private func keyboardDidShow(notification: NSNotification) {
-    let frameObject = notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as AnyObject
+    let frameObject = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as AnyObject
     if let keyboardRect = frameObject.cgRectValue {
       textViewBottomConstraint?.constant = -keyboardRect.size.height - padding
       view.layoutIfNeeded()
